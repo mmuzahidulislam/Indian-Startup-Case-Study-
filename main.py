@@ -92,7 +92,7 @@ def load_overview():
 
 
 # Load the dataset
-df = pd.read_csv('startup_cleaned.csv')
+df = pd.read_csv('data/startup_cleaned.csv')
 df['date'] = pd.to_datetime(df['date'])
 df['month'] = df['date'].dt.month
 df['year'] = df['date'].dt.year
